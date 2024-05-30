@@ -1,0 +1,47 @@
+.search {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    background: rgb(55,55,55);
+    color: white;
+}
+.search h1 {
+    text-align: center;
+}
+
+
+.search img {
+    height: auto;
+    width: 50%;
+    margin: auto;
+}
+.search form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+.search form input {
+    width: 50%;
+    caret-color: rgb(136,132,216);
+    height: 36px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+.search form [type='submit']{
+    margin: 5px;
+    color: white;
+    background: rgb(108, 208, 157);
+    letter-spacing: 1px;
+    width: 20%;
+    font-weight: 200;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: none;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+}
+.search form [type='submit']:hover {
+    opacity: .5;
+}

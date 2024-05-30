@@ -1,0 +1,65 @@
+.chat {
+    height: 90%;
+    background: rgb(100, 100, 100);
+    color: #ffffff;
+}
+.chat form {
+    height: 6%;
+}
+.channel-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+.messages {
+    list-style: none;
+    overflow-y: scroll;
+    height: 86%;
+    overflow-wrap: break-word;
+    background: rgb(55, 55, 55);
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 0;
+}
+.messages li {
+    margin: 5px 0;
+}
+
+
+.messages [data-currentUser="true"] {
+    color: rgb(136,132,216);
+}
+.messages [data-currentUser="false"] {
+    color: rgb(108, 208, 157);
+}
+
+.draft {
+    width: 50%;
+    background: rgb(55,55,55);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 100%;
+    margin-left: 31px;
+    margin-top: 1px;
+}
+.send-button {
+    border-radius: 5px;
+    border: none;
+}
+.timestamp {
+    display: flex;
+    justify-content: center;
+    font-weight: 200;
+    font-size: 12px;
+}
+span {
+    display: inline-block;
+    width: 10px;
+}
+.sender {
+    font-size: 16px;
+}
+hr {
+    margin: 0;
+    border: 0.5px solid rgb(100,100,100);
+}

@@ -1,0 +1,51 @@
+.profile {
+    height: 100%; 
+    padding: 10px;
+    /* overflow:hidden; */
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.climb-chart {
+    height: 50%;
+}
+h2 {
+    background: aliceblue;
+}
+
+.recharts-default-tooltip *{
+    width: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.profile-swap {
+    height: 30px;
+    width: 81px;
+    border-radius: 5px;
+    background: white;
+    border: 2px solid black;
+}
+.profile-swap:hover {
+    background: black;
+    color: white;
+}
+
+.profile .username {
+    font-weight: 500;
+    font-size: 24px;
+}
+.profile-header .add-session {
+    padding: 5px 5px;
+    cursor: pointer;
+    color: rgb(36, 36, 255);
+}
+

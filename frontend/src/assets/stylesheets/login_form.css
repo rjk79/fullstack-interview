@@ -1,0 +1,87 @@
+.login-form-container{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-form-container img {
+    height: 85px;
+}
+.login-form-container .title {
+    letter-spacing: 6px;
+    font-weight: 100;
+    font-size: 24px;    
+}
+.login-form input:focus {
+    outline: none;
+}
+
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    
+}
+[class^='moving-placeholder'] {
+    position: absolute;
+    pointer-events: none;
+    background: white;
+    color: gray;
+    top: 11%;
+    left: 5%;
+}
+.login-form input {
+    border-radius: 5px;
+    outline: none;
+}
+.login-form input:focus {
+    border: 2px solid rgb(0, 223, 223);
+}
+
+
+/* .moving-placeholder {
+    top: 1%;
+    left: 4%;   
+}
+
+.moving-placeholder2 {
+    top: 24%;
+    left: 4%;
+} */
+
+/* 
+.high {
+    top: -10px;
+    left: -10px;
+    color: blue;
+} */
+
+.login-form .btn {
+    border: none;
+    background: #59277d;
+    transition: opacity .3s;
+    width: 100px;
+    height: 32px;
+}
+.login-form .btn:hover {
+    opacity: .7;
+}
+
+.demo-button {
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: white;
+}
+.demo-button:hover {
+    background: black;
+    color: white;
+}
+.login-form>div {
+    position: relative;
+}
+

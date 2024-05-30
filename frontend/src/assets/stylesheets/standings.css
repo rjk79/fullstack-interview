@@ -1,0 +1,92 @@
+.standings {
+    background: #f2f2fd;
+    height: 90%;
+}
+.teams {
+    list-style: none;
+}
+.teams p {
+    margin: 0;
+}
+.standings-title {
+    font-size: 32px;    
+    font-weight: 600;
+}
+.teams li {
+    background: rgb(55,55,55);
+    border-radius: 10px;
+    margin: 5px 0;
+    padding: 0 10px;
+    color: white;
+}
+.teams li:hover {
+    /* opacity: .7; */
+}
+.teams p:first-child {
+    font-size: 18px;
+    font-weight: 600;
+}
+.members {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.members li {
+    color: rgb(108, 208, 157)
+}
+.members li a {
+    color: white;
+}
+.teams i {
+    position: absolute;
+    opacity: .3;
+    font-size: 57px;
+    top: -48px;
+    left: 148px;
+}
+.teams>li:nth-child(1) {      
+    background: repeating-linear-gradient(45deg, gold, transparent 400px);
+    color: black;
+}
+.teams>li:nth-child(2) {
+    background: repeating-linear-gradient(45deg, gray, transparent 400px);
+    color: black;
+}
+.teams>li:nth-child(3) {
+    background: repeating-linear-gradient(45deg, goldenrod, transparent 400px);
+    color: black;
+}
+.teams>li:nth-child(1)::before {
+    content: "-1-"
+}
+.teams>li:nth-child(2)::before {
+    content: "-2-"
+}
+.teams>li:nth-child(3)::before {
+    content: "-3-"
+}
+.icon-holder {
+    position: relative;
+}
+
+.highest {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+}
+
+.highest li {
+    margin: 2px 0;
+    background: transparent;
+    color: black;
+}
+
+.features {
+    color: black;
+}
+.changelog {
+    padding: 5px;
+    font-size: 22px;
+}

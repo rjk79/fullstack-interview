@@ -1,0 +1,186 @@
+.navbar {
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    margin: 0;
+    border-radius: 0;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.navbar > * {
+    margin: 0 10px;
+}
+.fa-bars {
+    display: none;
+}
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    height: 24px;
+    justify-content: space-evenly;
+}
+.hamburger:hover {
+    opacity: .5;
+}
+.topbun {
+    background: white;
+    height: 2px;
+    width: 24px;
+    transition: transform 1s;
+    /* animation: condense 2s forwards; */
+}
+.patty {
+    background: white;
+    height: 2px;
+    width: 24px;
+    /* transition: transform 1s; */
+    transition: width 1s;
+}
+.botbun {
+    background: white;
+    height: 2px;
+    width: 24px;
+    /* animation: expand 2s forwards; */
+    transition: transform 1s;
+
+}
+.shrink {
+    width: 0px;
+    height: 0px;
+    transition: width 1s;
+}
+
+.hidden {
+    width: 0;
+}
+@keyframes condense {
+    50% {transform: translate(0, -7px)}
+    100% {transform: rotateZ(-45deg) translate(4px, -4px)}
+}
+@keyframes expand {
+    50% {transform: translate(0, 7px)}
+    100% {transform: rotateZ(45deg) translate(4px, 4px)}
+}
+.counterclock {
+    transform: rotateZ(-45deg) translate(3px, -3px);
+
+    /* animation: condense 1s forwards; */
+}
+.clock {
+    transform: rotateZ(45deg) translate(3px, 3px);
+
+    /* animation: expand 1s forwards; */
+}
+
+
+.fa-search, .fa-sign-out-alt, .fa-bars {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+[class*="fas fa-home"] {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.links1 {
+    left: -2px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    background: rgb(1,1,1);
+    font-size: 18px;
+    margin: 0;
+    z-index: 1;
+    /* box-shadow: 2px 2px 4px 2px grey; */
+
+
+
+    /* z index needs to be below position */
+}
+
+.links1 > * {
+    color: white !important;
+    padding: 5px 10px;
+    transition: background-color .3s;
+
+}
+.links1 > *:hover {
+    text-decoration: none;
+    background: gold;
+}
+.links1 > *:focus {
+    text-decoration: none;
+}
+
+.links1 a {
+    border: 1px solid rgb(55, 55,55);
+}
+
+.links2 {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.links2 > * {
+    color: white;
+    margin-left: 10px;
+
+}
+.links2 > *:hover {
+    text-decoration: none;
+    color: gold;
+}
+.links2 > *:focus {
+    text-decoration: none;
+    color: gold;
+    outline: none;
+}
+
+.appname {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: 100;
+    font-size: 24px;
+    margin-left: 5px;
+}
+.appname:focus, .appname:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.spacer {
+    width: 80%;
+}
+
+.logout-button {
+    background: black;
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navbar-half1 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    /* margin-left: 500px; */
+}
+.navbar-half2 {
+    color: white;
+    opacity: .5;
+    width: 50%;
+    text-align: end;
+}
